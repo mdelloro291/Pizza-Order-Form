@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="MATTHEW P. DELLORO">
+	<title></title>
+	<style type="text/css">
+		form{
+			margin-left: 15%;
+    		margin-right: 15%;
+		}
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #F71735;
+		}
+		fieldset{
+			background-color: rgb(255, 255, 242);
+			border-radius: 20px;
+			margin: 20px;
+			
+		}
+		legend{
+			color: #EAD94C;
+			font-weight: bolder;
+			text-shadow: 5px 5px 10px #3D1308;
+			font-size: 3em;
+		}
+		input[type="text"], input[type="textarea"]{
+			border-radius:3px;
+		}
+		.legend-icon{
+			width: 80px;
+			height: auto;
+		}
+		
+		.icons{
+			display: inline-block;
+			width: 150px;
+			height: auto;
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.captions{
+			margin-top: 140px;
+		}
+		#info > *{
+			margin: 5px;
+			border-radius: 3px;
+		}
+		#food > *{
+			margin: 10px;
+			align-items: center;
+		}
+		#desc{
+			height: 50px;
+		}
+		#txt-feedback{
+			height: 200px;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="CSS/link.css">
+	<!--DELLORO, MATTHEW-->
+	<!--04/20/2022-->
+	
+		<form action="" method="post">
+
+			<fieldset id="info">
+				<legend>Customer Information</legend>
+				<label for="fullname">Full Name</label>
+        		<input type="text" name="fullname" id="fullname">
+				<label for="address">Complete Address</label>
+        		<input type="text" name="address" id="address">
+				<br>
+				<label for="contact">Contact No.</label>
+        		<input type="text" name="contact" id="contact">
+				<label for="email">Email Address</label>
+        		<input type="text" name="email" id="email">
+				<br>
+				<label for="desc">Description of how to get to the place</label>
+				<br>
+        		<input type="textarea" name="desc" id="desc">
+			
+			</fieldset>
+
+			<fieldset id="food">
+				<legend><img src="DELLORO_IMAGES_ITBD/icon.png" alt="Burger" class="legend-icon"></legend>
+				<a href="#burger"><img src="DELLORO_IMAGES_ITBD/burger.png" alt="" class="icons"></a>
+				<a href="#pasta"><img src="DELLORO_IMAGES_ITBD/pasta.png" alt="" class="icons"></a>
+				<br>
+				<a href="#fries"><img src="DELLORO_IMAGES_ITBD/fries.png" alt="" class="icons"></a>
+				<a href="#drinks"><img src="DELLORO_IMAGES_ITBD/drink.png" alt="" class="icons"></a>
+				
+			</fieldset>
+
+			<fieldset id="burger">
+				<legend><img src="DELLORO_IMAGES_ITBD/burger.png" alt="Burger" class="legend-icon"></legend>
+				<p>Burger Patty</p>
+				<input type="radio" name="patty" value="Single Patty" id="single">
+				<label for="single">Single Patty</label>
+				<input type="radio" name="patty" value="Double Patty" id="double">
+				<label for="double">Double Patty</label>
+
+				<p>Add-Ons</p>
+				<input type="checkbox" name="cheese" id="cheese" value="Cheese">
+				<label for="cheese">Cheese</label>
+				<input type="checkbox" name="coleslaw" id="coleslaw" value="Coleslaw">
+				<label for=coleslaw"">Coleslaw</label>
+				<input type="checkbox" name="tomato" id="tomato" value="Tomato">
+				<label for="tomato">Tomato</label>
+				<input type="checkbox" name="onion" id="onion" value="Onion">
+				<label for="onion">Onion</label>
+				<input type="checkbox" name="cucumber" id="cucumber" value="Cucumber">
+				<label for="cucumber">Cucumber</label>
+				<input type="checkbox" name="bacon" id="bacon" value="Bacon">
+				<label for="bacon">Bacon</label>
+
+				<br><br>
+				<label for="qty-burger">Quantity</label>
+				<input type="text" name="qty-burger" id="qty-burger">
+			</fieldset>
+
+			<fieldset id="pasta">
+				<legend><img src="DELLORO_IMAGES_ITBD/pasta.png" alt="Burger" class="legend-icon"></legend>
+				<p>Choice of Sauce</p>
+				<input type="radio" name="sauce" value="Spaghetti" id="spag">
+				<label for="spag">Spaghetti</label>
+				<input type="radio" name="sauce" value="Carbonara" id="carbo">
+				<label for="carbo">Carbonara</label>
+				<input type="radio" name="sauce" value="Pesto" id="pesto">
+				<label for="pesto">Pesto</label>
+				<input type="radio" name="sauce" value="Alfredo" id="alfredo">
+				<label for="alfredo">Alfredo</label>
+				<input type="radio" name="sauce" value="Aglio Olio" id="aglio">
+				<label for="aglio">Aglio Olio</label>
+
+				<p>Extras</p>
+				<input type="checkbox" name="x-cheese" id="x-cheese" value="Extra Cheese">
+				<label for="x-cheese">Extra Cheese</label>
+				<input type="checkbox" name="x-sauce" id="x-sauce" value="Extra Sauce">
+				<label for="x-sauce">Extra Sauce</label>
+				
+				<p>Size</p>
+				<input type="radio" name="pasta-size" value="Small Pasta" id="pasta-sml">
+				<label for="pasta-sml">Small</label>
+				<input type="radio" name="pasta-size" value="Regular Pasta" id="pasta-reg">
+				<label for="pasta-reg">Regular</label>
+				<input type="radio" name="pasta-size" value="Large Pasta" id="pasta-lg">
+				<label for="pasta-lg">Large</label>
+
+				<br><br>
+				<label for="qty-pasta">Quantity</label>
+				<input type="text" name="qty-pasta" id="qty-pasta">
+			</fieldset>
+
+			<fieldset id="fries">
+				<legend><img src="DELLORO_IMAGES_ITBD/fries.png" alt="Burger" class="legend-icon"></legend>
+				<p>Flavor</p>
+				<input type="radio" name="flavor" value="Barbecue" id="fries-bbq">
+				<label for="fries-bbq">Barbecue</label>
+				<input type="radio" name="flavor" value="Cheese" id="fries-cheese">
+				<label for="fries-cheese">Cheese</label>
+				<input type="radio" name="flavor" value="Sour Cream" id="fries-sc">
+				<label for="fries-sc">Sour Cream</label>
+
+				<p>Size</p>
+				<input type="radio" name="fries-size" value="Small Fries" id="fries-sml">
+				<label for="fries-sml">Small</label>
+				<input type="radio" name="fries-size" value="Regular Fries" id="fries-reg">
+				<label for="fries-reg">Regular</label>
+				<input type="radio" name="fries-size" value="Large Fries" id="fries-lg">
+				<label for="fries-lg">Large</label>
+
+				<br><br>
+				<label for="qty-fries">Quantity</label>
+				<input type="text" name="qty-fries" id="qty-fries">
+			</fieldset>
+
+			<fieldset id="drinks">
+				<legend><img src="DELLORO_IMAGES_ITBD/drink.png" alt="Burger" class="legend-icon"></legend>
+				<p>Flavor</p>
+				<select name="sel-drink" id="sel-drink">
+					<option value="Iced Tea">Iced Tea</option>
+					<option value="Iced Coffee">Iced Coffee</option>
+					<option value="Milk Tea">Milk Tea</option>
+					<option value="Soda">Soda</option>
+				</select>
+				<p>Size</p>
+				<input type="radio" name="drinks-size" value="Small Drinks" id="drinks-sml">
+				<label for="drinks-sml">Small</label>
+				<input type="radio" name="drinks-size" value="Regular Drinks" id="drinks-reg">
+				<label for="drinks-reg">Regular</label>
+				<input type="radio" name="drinks-size" value="Large Drinks" id="drinks-lg">
+				<label for="drinks-lg">Large</label>
+
+				<br><br>
+				<label for="qty-fries">Quantity</label>
+				<input type="text" name="qty-drinks" id="qty-fries">
+			</fieldset>
+			<fieldset id="feedback">
+				<legend>Feedback</legend>
+				<p>Leave a Feedback on how we can improve this form</p>
+				<input type="textarea" name="feedback" id="txt-feedback">
+			</fieldset>
+
+			<fieldset id="delivery">
+				<legend>Delivery</legend>
+				<input type="radio" name="delivery" value="Delivery" id="delivery">
+				<label for="delivery">Delivery</label>
+				<input type="radio" name="delivery" value="Self Pick-Up" id="pickup">
+				<label for="pickup">Self Pick-Up</label>
+				<br><br>
+				<input type="submit" value="Checkout Order">
+				<input type="reset" value="Reset Form">
+			</fieldset>
+
+		</form>
+
+</body>
+</html>
